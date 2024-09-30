@@ -8,6 +8,8 @@ fun main() {
     for (n in (1..<NUM_FRAMES)) game.round(false)
     game.round(true)
 
+
+
     game.score(
         onStrike = { nextFrame, next2Frame -> countStrike(nextFrame, next2Frame) },
         onSpare = { nextFrame -> countSpare(nextFrame) }
